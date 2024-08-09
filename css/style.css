@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	background: #fff;
 	font-family: 'poppins', sans-serif;
+	scroll-behavior: smooth;
 }
 
 body a {

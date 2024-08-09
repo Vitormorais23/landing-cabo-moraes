@@ -1001,6 +1001,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					nextSection.classList.remove('hidden');
 					nextSection.classList.add('show');
 
+					// Ajusta a tela para a div aberta com rolagem suave
+					nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
 					// Se não houver mais seções ocultas, esconda o botão "Carregar mais"
 					if (hiddenSections.length === 0) {
 						loadMoreBtn.style.display = 'none';
@@ -1026,6 +1029,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				closeBtn.style.display = 'none';
 			});
 		});
+
+
 
 
 		document.addEventListener("DOMContentLoaded", function () {
