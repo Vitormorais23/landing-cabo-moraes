@@ -1,0 +1,221 @@
+/* Ciculos Bandeiras de Defesa */
+
+.title_circulo {
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 700;
+}
+
+.coluna1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.flags-grid {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Responsivo para três colunas */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.bandeira-defesa {
+    width: 130px;
+    /* Tamanho inicial do círculo */
+    height: 130px;
+    /* Tamanho inicial do círculo */
+    border-radius: 50%;
+    background: linear-gradient(133deg, rgba(0,163,255,1) 0%, rgba(26,0,153,1) 100%);
+    /* Cor de fundo, você pode alterar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img_bandeira {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.alinhar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-card-implementacao {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+/* Ciculos Bandeiras de Defesa */
+
+/* Circulos Investimentos */
+
+.text-black {
+    color: #000 !important;
+    font-size: 1.6rem;
+}
+
+.coluna-principal-invest {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.coluna-invest-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-invest-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bandeira-implementacao {
+    width: 7rem;
+    /* Tamanho inicial do círculo */
+    height: 7rem;
+    /* Tamanho inicial do círculo */
+    border-radius: 50%;
+    background-color: #ffc700;
+    /* Cor de fundo, você pode alterar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-78%);
+}
+
+.card-implementacao {
+    background-color: #003d8f;
+    border-radius: 20px;
+    width: 30rem;
+    height: 14rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flags-implement {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+/* Circulos Investimentos */
+
+/* Responsividade */
+@media (max-width:1366px) {
+    .coluna1 {
+        margin-top: 0em;
+    }
+
+    .coluna2 {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 768px) {
+    .flags-grid {
+        flex: 1 1 calc(33.333% - 10px);
+        /* Ajuste de colunas para telas menores */
+    }
+
+    .bandeira-defesa {
+        width: 100px;
+        /* Ajuste do tamanho do círculo para telas menores */
+        height: 100px;
+    }
+}
+
+@media (max-width: 680px) {
+    .text-card-implementacao {
+        font-size: 1.2rem;
+    }
+
+    .text-black {
+        padding: 0 8px 0 8px;
+    }
+
+    .card-implementacao {
+        width: 25rem;
+        height: 14rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 560px) {
+    .text-card-implementacao {
+        font-size: 1.1rem;
+    }
+
+    .bandeira-implementacao {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .card-implementacao {
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flags-grid {
+        flex: 1 1 calc(33.333% - 5px);
+        /* Ajuste de colunas para telas ainda menores */
+    }
+
+    .bandeira-defesa {
+        width: 80px;
+        /* Ajuste do tamanho do círculo para telas ainda menores */
+        height: 80px;
+    }
+}
+
+@media (max-width: 479px) {
+    .flags-grid {
+        flex: 1 1 calc(10.333% - 2px);
+        /* Ajuste de colunas para telas ainda menores */
+    }
+
+    .bandeira-defesa {
+        width: 60px;
+        /* Ajuste do tamanho do círculo para telas ainda menores */
+        height: 60px;
+    }
+}
+
+@media (max-width: 460px) {
+    .text-card-implementacao {
+        font-size: 1.1rem;
+    }
+
+    .card-implementacao {
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .text-card-implementacao {
+        font-size: 1rem;
+    }
+
+    .card-implementacao {
+        width: 15rem;
+        height: 15.5rem;
+    }
+}
