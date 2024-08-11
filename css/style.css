@@ -41,8 +41,8 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-	font-family: 'poppins', sans-serif;
-	letter-spacing: 1px;
+	font-family: 'league gothic', sans-serif;
+	
 }
 
 .margin-top {
@@ -66,10 +66,17 @@ ul {
 /*-- //Reset-Code --*/
 .about,
 .about-skills,
-.gallery,
 .about-education,
 .w3layoutsbooking {
 	padding: 3em 0;
+}
+
+.remove-padding {
+	padding-top: 0 !important;
+}
+
+.remove-margin {
+	margin-top: 0 !important;
 }
 
 /*-- header styling starts here --*/
@@ -990,14 +997,18 @@ span.circles-text {
 
 /*-- gallery --*/
 .gallery {
-	background: #fff
+	background-image: url("../images/about-bg.png");
+}
+
+.gallery {
+	padding-top: 3em;
 }
 
 .tittle-agileinfo h3 {
 	text-align: center;
 	margin-bottom: 30px;
 	font-size: 56px;
-	color: black;
+	color: #fff;
 }
 
 .w3layouts_team_grid {
@@ -1158,10 +1169,11 @@ span.circles-text {
 .education-p {
 	color: #000;
 	font-size: 1.6rem;
-	text-align: justify;
+	text-align: center;
 }
 
 .title-investments {
+	margin-top: 3em;
 	height: 6rem;
 	display: flex;
 	align-items: center;
