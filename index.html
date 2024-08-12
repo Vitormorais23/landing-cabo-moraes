@@ -447,32 +447,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</a>
 							</div>
-							<div class="col-md-3 w3layouts_gallery_grid">
-								<a title="Portfolio" href="images/model-5.jpg">
-									<div class="w3layouts_team_grid">
-										<img src="images/model-5.jpg" alt=" " data-selector="img"
-											class="img-responsive" />
-										<div class="w3layouts_team_grid_pos">
-											<div class="wthree_text">
-												<h4>Model</h4>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-3 w3layouts_gallery_grid">
-								<a title="Portfolio" href="images/model-6.jpg">
-									<div class="w3layouts_team_grid">
-										<img src="images/model-6.jpg" alt=" " data-selector="img"
-											class="img-responsive" />
-										<div class="w3layouts_team_grid_pos">
-											<div class="wthree_text">
-												<h4>Model</h4>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
@@ -987,6 +961,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					const nextSection = hiddenSections.shift();
 					nextSection.classList.remove('hidden');
 					nextSection.classList.add('show');
+
+					// Ajusta a tela para a div aberta com rolagem suave
+					nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 					// Se não houver mais seções ocultas, esconda o botão "Carregar mais"
 					if (hiddenSections.length === 0) {

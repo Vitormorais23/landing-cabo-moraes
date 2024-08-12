@@ -223,7 +223,7 @@ ul {
 }
 
 .logo-cabo-moraes {
-	width: 40rem;
+    width: 40rem;
 }
 
 .banner_text_w3layouts h3 {
@@ -1105,16 +1105,17 @@ span.circles-text {
 .nav-tabs>li.active>a:focus {
 	color: #fff;
 	cursor: default;
-	background-color: #000;
+	background-color: #FCBD00;
 	border: none;
 	border-bottom-color: transparent;
+	border-radius: 20px;
 }
 
 .nav-tabs>li>a {
 	margin-right: 3px;
 	border-radius: 0;
 	font-size: 20px;
-	color: #212121;
+	color: #ffffff;
 	letter-spacing: 2px;
 	border: none;
 }
@@ -1128,11 +1129,10 @@ span.circles-text {
 }
 
 .nav-tabs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: 0 0 2.5em;
-}
-
-.nav-tabs>li:nth-child(1) {
-	margin-left: 30.5em;
 }
 
 .nav-tabs>li>a:hover {
@@ -1676,10 +1676,6 @@ a.to-top {
 
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 20.5em;
-	}
-
 	.booking-form-aits input[type="text"],
 	.booking-form-aits input[type="email"] {
 		width: 48.7%;
@@ -1705,10 +1701,6 @@ a.to-top {
 
 	ul.address li ul.agileits-address-text li {
 		margin-top: 1em;
-	}
-
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 13.5em;
 	}
 
 	.w3layouts_gallery_grid {
@@ -1802,10 +1794,6 @@ a.to-top {
 		margin-top: 1.5em;
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 15.5em;
-	}
-
 	.w3layouts_gallery_grid {
 		float: left;
 		width: 50%;
@@ -1866,10 +1854,6 @@ a.to-top {
 		padding: 0;
 		float: left;
 		width: 50%;
-	}
-
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 14.5em;
 	}
 
 	.experience-left h6 {
@@ -2040,10 +2024,6 @@ a.to-top {
 		height: 35%;
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 9.5em;
-	}
-
 	.booking-form-aits {
 		padding: 63px;
 	}
@@ -2101,10 +2081,6 @@ a.to-top {
 
 	.logo-cabo-moraes {
 		width: 38rem;
-	}
-
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 7.5em;
 	}
 
 	.experience-right h4 {
@@ -2238,10 +2214,6 @@ a.to-top {
 		font-size: 15px
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 5.5em;
-	}
-
 	.w3layouts_gallery_grid {
 
 		width: 100%;
@@ -2289,12 +2261,8 @@ a.to-top {
 		font-size: 13px;
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 2.5em;
-	}
-
 	.nav-tabs>li>a {
-		font-size: 18px;
+		font-size: 13px;
 	}
 
 	.booking-form-aits input[type="text"],
@@ -2352,17 +2320,12 @@ a.to-top {
 		padding: 5em 0 0;
 	}
 
-	.nav-tabs>li:nth-child(1) {
-		margin-left: 0;
-	}
-
 	a.wthree-more.w3more1 {
 		margin-left: 0em;
 	}
 
 	.nav-tabs>li>a {
-		margin: 0 3em;
-		font-size: 20px;
+		font-size: 13px;
 	}
 
 	#m_nav_menu {
