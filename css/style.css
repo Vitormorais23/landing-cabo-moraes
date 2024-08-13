@@ -88,7 +88,7 @@ ul {
 
 /*-- header styling starts here --*/
 .agileits_main {
-	background: url(../images/cb.png);
+	background: url(../images/cb.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -381,7 +381,7 @@ ul {
 	text-indent: -9999px;
 	overflow: hidden;
 	text-decoration: none;
-	/* background: url(../images/prev.png) right 0px; */
+	/* background: url(../images/prev.webp) right 0px; */
 	width: 25px;
 	height: 35px;
 	background-size: cover;
@@ -394,7 +394,7 @@ ul {
 
 .callbacks_nav.next {
 	left: auto;
-	/* background: url(../images/next.png) left 0px; */
+	/* background: url(../images/next.webp) left 0px; */
 	right: 0;
 	background-size: cover;
 }
@@ -545,7 +545,7 @@ ul {
 }
 
 .about {
-    background-image: url(../images/about-bg.png);
+    background-image: url(../images/about-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -862,7 +862,7 @@ a.wthree-more:hover>span:nth-child(10) {
 /*-- //about-page --*/
 /*-- Skills bar effects --*/
 .circulos {
-	background-image: url(../images/cb.png);
+	background-image: url(../images/cb.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1005,7 +1005,7 @@ span.circles-text {
 
 /*-- gallery --*/
 .gallery {
-	background-image: url("../images/about-bg.png");
+	background-image: url("../images/about-bg.webp");
 }
 
 .gallery {
@@ -1173,7 +1173,7 @@ span.circles-text {
 }
 
 .about-education {
-	background-image: url('../images/cb.png');
+	background-image: url('../images/cb.webp');
 }
 
 .education-p {
@@ -1400,7 +1400,7 @@ button:hover {
 /*-- Booking --*/
 
 .w3layoutsbooking {
-	background-image: url(../images/ba.jpg);
+	background-image: url(../images/ba.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1903,12 +1903,12 @@ a.to-top {
 	}
 
 	.about-mobile {
-		background-image: url('../images/about-bg-mobile.jpg');
+		background-image: url('../images/about-bg-mobile.webp');
 	}
 
 	.img-mobile::after {
 		display: block;
-		background-image: url('../images/bio-mobile.jpg');
+		background-image: url('../images/bio-mobile.webp');
 		border-radius: 30px;
 	}
 
