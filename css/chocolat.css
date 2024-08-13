@@ -64,8 +64,7 @@ body {
 }
 
 #Choco_container_description {
-	background: #0000008a;
-    bottom: 0;
+	background: #000000bf;
 	padding: 0;
 	width: 100%;
 	color: #FFFFFF;
@@ -132,5 +131,21 @@ body {
 	}
 	#Choco_left_arrow {
 		left: -15%;
+	}
+}
+
+@media(min-width:550px) {
+	#Choco_container_description {
+		background: #000000bf;
+		bottom: 0;
+		padding: 0;
+		width: 100%;
+		color: #FFFFFF;
+		font-family: Tahoma;
+		clear: both;
+		position: absolute;
+		font-size: 1.3rem;
+		overflow: hidden;
+		visibility: hidden;
 	}
 }

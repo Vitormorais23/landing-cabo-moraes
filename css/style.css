@@ -1107,7 +1107,7 @@ span.circles-text {
 }
 
 .w3layouts_gallery_grid {
-	padding: 0;
+	padding: 3px;
 }
 
 .nav-tabs>li.active>a,
@@ -1862,7 +1862,6 @@ a.to-top {
 	}
 
 	.w3layouts_gallery_grid {
-		padding: 0;
 		float: left;
 		width: 50%;
 	}
