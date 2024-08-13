@@ -1,9 +1,10 @@
 /* Ciculos Bandeiras de Defesa */
 
 .title_circulo {
+    color: #07336d;
     text-align: center;
     margin: 1.5rem 0 1rem 0;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .coluna1 {
@@ -218,4 +219,39 @@
         width: 15rem;
         height: 15.5rem;
     }
+}
+
+@media screen and (max-width: 359px) {
+
+    .title_circulo {
+        font-size: 2.5rem;
+    }
+
+    .bandeira-defesa {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .bandeira-implementacao {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .card-implementacao {
+        width: 14.5rem;
+        height: 15rem;
+    }
+
+    .coluna-principal-invest {
+        gap: 0rem;
+    }
+
+    .flags-implement {
+        padding: 5px;
+    }
+
+    .text-card-implementacao {
+        font-size: .9rem;
+    }
+	
 }

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
 html,
 body {
 	padding: 0;
@@ -50,12 +57,12 @@ h6 {
 }
 
 p {
-	margin: 0;
-	padding: 0;
-	font-family: 'poppins', sans-serif;
-	letter-spacing: 1px;
-	color: #fff;
-
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 ul {
@@ -549,7 +556,8 @@ ul {
 }
 
 .about-right h2 {
-	font-size: 3.5em;
+	font-weight: 500;
+	font-size: 4em;
 	color: #fff;
 	margin-top: 2rem;
 }
@@ -1005,6 +1013,8 @@ span.circles-text {
 }
 
 .tittle-agileinfo h3 {
+	font-weight: 500;
+	letter-spacing: 2px;
 	text-align: center;
 	margin-bottom: 30px;
 	font-size: 56px;
@@ -1183,9 +1193,9 @@ span.circles-text {
 }
 
 .title-investments h3 {
-	letter-spacing: 3px;
-	font-size: 3rem;
-	font-weight: 600;
+	letter-spacing: 5px;
+	font-size: 5rem;
+	font-weight: 500;
 	color: #fff;
 }
 
@@ -1315,7 +1325,7 @@ button:hover {
 	color: #000000;
 	font-size: 1.6rem;
 	font-weight: 400;
-	text-align: justify;
+	text-align: start;
 }
 
 .experience-left h6 span {
@@ -1335,11 +1345,12 @@ button:hover {
 }
 
 .experience-right h4 {
-	font-size: 2em;
-	color: #000;
+	text-align: center;
+	font-size: 5rem;
+	color: #07336d;
 	margin-bottom: 0.5em;
 	letter-spacing: 1px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .experience-grids.experience-grids-btm {
@@ -1925,6 +1936,10 @@ a.to-top {
 
 @media screen and (max-width: 767px) {
 
+	p {
+		text-align: center;
+	}
+
 	.w3ls-titlew3l h3 {
 		margin-bottom: 45px;
 	}
@@ -1961,6 +1976,10 @@ a.to-top {
 		margin: 2em 1em 0;
 		width: 95%;
 	}
+
+	.experience-right p {
+		text-align: center;
+	} 
 }
 
 @media screen and (max-width: 736px) {
@@ -1989,7 +2008,7 @@ a.to-top {
 
 @media screen and (max-width: 680px) {
 	.title-investments h3 {
-		font-size: 2.5rem;
+		font-size: 4rem;
 	}
 }
 
@@ -2061,11 +2080,11 @@ a.to-top {
 
 	.experience-left h6 {
 		font-size: 21px;
-	}
+	}*/
 
-	.experience-right p {
-		font-size: 1.4rem;
-	} */
+	.experience-right h4 {
+		font-size: 4.5rem;
+	}
 
 	.newsletter span {
 		width: 20%;
@@ -2084,7 +2103,7 @@ a.to-top {
 	}
 
 	.experience-right h4 {
-		font-size: 2.1rem;
+		font-size: 4rem;
 	}
 
 	.experience-right {
@@ -2162,7 +2181,7 @@ a.to-top {
 
 @media screen and (max-width: 560px) {
 	.title-investments h3 {
-		font-size: 2.1rem;
+		font-size: 3.5rem;
 	}
 
 	.text-black {
@@ -2220,11 +2239,17 @@ a.to-top {
 	}
 
 	.title-investments h3 {
-		font-size: 1.8rem;
+		font-size: 2.8rem;
 	}
 
 	.education-p {
 		margin: 0 7px;
+	}
+
+	button {
+		margin: 8px;
+		padding: 6px;
+		font-size: 1.4rem;
 	}
 }
 
@@ -2275,7 +2300,7 @@ a.to-top {
 	}
 
 	.title-investments h3 {
-		font-size: 1.6rem;
+		font-size: 2.5rem;
 	}
 
 	.education-p {
@@ -2297,7 +2322,7 @@ a.to-top {
 	}
 
 	.experience-right h4 {
-		font-size: 17px;
+		font-size: 3rem;
 	}
 
 	.w3ls-titlew3l h3 {
@@ -2339,12 +2364,40 @@ a.to-top {
 	}
 
 	.title-investments h3 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	.education-p {
 		margin: 0 8px;
 		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 359px) {
+
+	.logo-cabo-moraes {
+        width: 26rem;
+    }
+
+	.name_vereador {
+		font-size: 4.5rem;
+	}
+
+	.bandeira-defesa {
+        width: 55px;
+        height: 55px;
+    }
+
+	.flags-grid p {
+        font-size: 1.1rem;
+    }
+
+	.tittle-agileinfo h3 {
+		font-size: 30px;
+	}
+
+	.title-investments h3 {
+		font-size: 1.8rem;
 	}
 }
 
@@ -2374,5 +2427,18 @@ a.to-top {
 
 	.about-right h2 {
 		font-size: 22px;
+	}
+
+	.title-investments h3 {
+        font-size: 1.5rem;
+    }
+
+	.nav-tabs>li>a {
+        font-size: 12px;
+    }
+
+	button {
+		padding: 8px;
+		font-size: 1.2rem;
 	}
 }
