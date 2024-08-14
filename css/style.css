@@ -1557,7 +1557,8 @@ input.margin-right {
 }
 
 .brands-icons {
-
+	display: flex;
+	gap: 10px;
 }
 
 .email {
@@ -1589,7 +1590,6 @@ input.margin-right {
 .footer span.fa-brands {
 	background: #000000b5;
 	font-weight: bold;
-	margin-right: 4px;
 }
 
 
@@ -1601,7 +1601,6 @@ input.margin-right {
 	text-align: center;
 	padding: 9px 0;
 	cursor: pointer;
-	margin: 0 1em 0 0;
 }
 
 .brands span.fa-brands.fa-facebook-f:hover {
@@ -2072,7 +2071,6 @@ a.to-top {
 	}
 
 	.footer span.fa-brands {
-		margin-right: 3px;
 		font-size: 12px;
 		line-height: 11px;
 	}
