@@ -49,7 +49,7 @@ h6 {
 	margin: 0;
 	padding: 0;
 	font-family: 'league gothic', sans-serif;
-	
+
 }
 
 .margin-top {
@@ -57,12 +57,12 @@ h6 {
 }
 
 p {
-    text-align: start;
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    letter-spacing: 1px;
-    color: #fff;
+	text-align: start;
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	letter-spacing: 1px;
+	color: #fff;
 }
 
 ul {
@@ -80,10 +80,6 @@ ul {
 
 .remove-padding {
 	padding-top: 0 !important;
-}
-
-.remove-margin {
-	margin-top: 0 !important;
 }
 
 /*-- header styling starts here --*/
@@ -230,7 +226,7 @@ ul {
 }
 
 .logo-cabo-moraes {
-    width: 40rem;
+	width: 40rem;
 }
 
 .banner_text_w3layouts h3 {
@@ -389,7 +385,7 @@ ul {
 
 .callbacks_nav:hover {
 	opacity: 0.3;
-	
+
 }
 
 .callbacks_nav.next {
@@ -545,7 +541,7 @@ ul {
 }
 
 .about {
-    background-image: url(../images/about-bg.webp);
+	background-image: url(../images/about-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -573,7 +569,7 @@ ul {
 	letter-spacing: 2px;
 }
 
-.name_vereador{
+.name_vereador {
 	font-family: 'league spartan', sans-serif;
 	font-weight: 600;
 	font-size: 6rem;
@@ -653,7 +649,7 @@ p.agile-br {
 	margin-top: 2.5em;
 }
 
-.social-wthree-icons .fa {
+.social-wthree-icons .fa-brands {
 	font-size: 14px;
 	color: #000;
 	line-height: 2.6em;
@@ -675,22 +671,22 @@ p.agile-br {
 	text-decoration: none;
 }
 
-.social-wthree-icons span.fa-facebook:hover {
+.social-wthree-icons span.fa-brands.fa-facebook:hover {
 	color: white;
 	background: #3b5998;
 }
 
-.social-wthree-icons span.fa-twitter:hover {
+.social-wthree-icons span.fa-brands.fa-twitter:hover {
 	color: white;
 	background: #1da1f2;
 }
 
-.social-wthree-icons span.fa-google-plus:hover {
+.social-wthree-icons span.fa-brands.fa-google-plus:hover {
 	color: white;
 	background: #dd4b39;
 }
 
-.social-wthree-icons span.fa-dribbble:hover {
+.social-wthree-icons span.fa-brands.fa-dribbble:hover {
 	color: white;
 	background: #ea4c89;
 }
@@ -866,8 +862,10 @@ a.wthree-more:hover>span:nth-child(10) {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	border: 6px solid; /* Tamanho da borda */
-    border-image: linear-gradient(to bottom, blue, white) 1; /* Gradiente da borda */
+	border: 6px solid;
+	/* Tamanho da borda */
+	border-image: linear-gradient(to bottom, blue, white) 1;
+	/* Gradiente da borda */
 }
 
 .skills-w3lsright h4 {
@@ -894,7 +892,7 @@ a.wthree-more:hover>span:nth-child(10) {
 	margin-top: 1em;
 }
 
-.skills-w3lsleft ul li span.fa {
+.skills-w3lsleft ul li span.fa-brands {
 	font-size: 1.2em;
 	margin-right: 0.5em;
 }
@@ -1001,11 +999,18 @@ span.circles-text {
 
 }
 
+.margin-top-0 {
+	margin-top: 0 !important;
+}
+
 /*-- //Stats --*/
 
 /*-- gallery --*/
 .gallery {
 	background-image: url("../images/about-bg.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .gallery {
@@ -1174,6 +1179,9 @@ span.circles-text {
 
 .about-education {
 	background-image: url('../images/cb.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .education-p {
@@ -1189,7 +1197,7 @@ span.circles-text {
 	align-items: center;
 	justify-content: center;
 	background: linear-gradient(133deg, rgba(0, 163, 255, 1) 0%, rgba(26, 0, 153, 1) 100%);
-	border-radius: 50px 50px  0 0;
+	border-radius: 50px 50px 0 0;
 }
 
 .title-investments h3 {
@@ -1212,25 +1220,26 @@ span.circles-text {
 }
 
 button {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    background-color: #003d8f;
-    color: white;
-    font-size: 1.6rem;
-    cursor: pointer;
+	margin: 10px;
+	padding: 10px;
+	border: none;
+	background-color: #003d8f;
+	color: white;
+	font-size: 1.6rem;
+	cursor: pointer;
 	border-radius: 10px;
 }
 
 button:hover {
-    background-color: #fcbd00;
+	background-color: #fcbd00;
 }
 
 /* Estilo para ocultar as divs durante a rolagem */
 .scroll-container {
-    position: relative;
-    height: 300px; /* Ajuste conforme necessário */
-    overflow: hidden;
+	position: relative;
+	height: 300px;
+	/* Ajuste conforme necessário */
+	overflow: hidden;
 }
 
 .hidden {
@@ -1271,11 +1280,11 @@ button:hover {
 }
 
 .experience-grids {
-    width: 100%;
+	width: 100%;
 }
 
 .experience-grids2 {
-    width: 100%;
+	width: 100%;
 }
 
 
@@ -1356,6 +1365,7 @@ button:hover {
 .experience-grids.experience-grids-btm {
 	margin: 3em auto;
 }
+
 .experience-grids2.experience-grids-btm {
 	margin: 3em auto;
 }
@@ -1363,6 +1373,7 @@ button:hover {
 .experience-grids.experience-grids-btm .experience-left {
 	float: right;
 }
+
 .experience-grids2.experience-grids-btm .experience-left {
 	float: right;
 }
@@ -1370,6 +1381,7 @@ button:hover {
 .experience-grids.experience-grids-btm .experience-right {
 	border-right: 0;
 }
+
 .experience-grids2.experience-grids-btm .experience-right {
 	border-right: 0;
 }
@@ -1381,6 +1393,7 @@ button:hover {
 	-ms-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
 .experience-grids2:hover .experience-left h6 {
 	-webkit-transform: scale(1.3);
 	-moz-transform: scale(1.3);
@@ -1496,7 +1509,11 @@ input.margin-right {
 
 .footer {
 
-	background: #00a78e;
+	background-image: url(../images/about-bg.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 	color: #fff;
 	padding-top: 50px;
 }
@@ -1509,12 +1526,15 @@ input.margin-right {
 }
 
 .footer-grids {
+	display: flex;
+	gap: 10px;
 	margin: 40px 0 30px;
 }
 
 .footer h4 {
-	font-size: 18px;
-	text-align: left;
+	letter-spacing: 2px;
+	font-size: 2.5rem;
+	text-align: center;
 	margin-bottom: 20px;
 }
 
@@ -1528,30 +1548,34 @@ input.margin-right {
 	-webkit-box-flex: 1;
 }
 
-.newsletter {
+.brands {
 	flex: 1;
 	-webkit-box-flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.brands-icons {
+
 }
 
 .email {
 	flex: 1;
 	-webkit-box-flex: 1;
-}
-
-.info {
 	color: #fff;
-	font-size: 13px;
 }
 
-.info:hover {
+.email:hover a{
+	text-decoration: underline;
 	color: #000;
 }
 
-.email,
-.phone,
+.email p,
+.phone p,
 .address p {
-	text-align: left;
-	font-size: 13px;
+	text-align: center;
+	font-size: 1.6rem;
 	line-height: 25px;
 	color: #fff;
 }
@@ -1562,14 +1586,15 @@ input.margin-right {
 	color: #fff;
 }
 
-.footer span.fa {
+.footer span.fa-brands {
+	background: #000000b5;
 	font-weight: bold;
 	margin-right: 4px;
-	color: #000;
 }
 
 
-.newsletter span {
+.brands span {
+	border-radius: 50px;
 	border: 1px solid white;
 	width: 35px;
 	height: 35px;
@@ -1579,7 +1604,7 @@ input.margin-right {
 	margin: 0 1em 0 0;
 }
 
-.newsletter span.fa-facebook:hover {
+.brands span.fa-brands.fa-facebook-f:hover {
 	color: white;
 	background: #3b5998;
 	transition: 0.5s all;
@@ -1590,9 +1615,9 @@ input.margin-right {
 	text-decoration: none;
 }
 
-.newsletter span.fa-twitter:hover {
+.brands span.fa-brands.fa-whatsapp:hover {
 	color: white;
-	background: #1da1f2;
+	background: #1df22f;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -1601,20 +1626,9 @@ input.margin-right {
 	text-decoration: none;
 }
 
-.newsletter span.fa-google-plus:hover {
+.brands span.fa-brands.fa-google-plus-g:hover {
 	color: white;
 	background: #dd4b39;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
-	text-decoration: none;
-}
-
-.newsletter span.fa-dribbble:hover {
-	color: white;
-	background: #ea4c89;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -1745,6 +1759,7 @@ a.to-top {
 	.experience-grids {
 		width: 92%;
 	}
+
 	.experience-grids2 {
 		width: 92%;
 	}
@@ -1758,7 +1773,13 @@ a.to-top {
 		font-size: 27px;
 	}
 
-	.newsletter span {
+	.footer-grids {
+		display: grid;
+		justify-content: center;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+
+	.brands span {
 		margin: 0 0.5em 0 0;
 	}
 }
@@ -1824,7 +1845,7 @@ a.to-top {
 		max-height: 679px;
 	}
 
-	.newsletter span {
+	.brands span {
 		margin: 0 0.5em 0 0;
 	}
 }
@@ -1875,7 +1896,7 @@ a.to-top {
 		width: 48.4%;
 	}
 
-	.newsletter span {
+	.brands span {
 		margin: 0 0.5em 0 0;
 	}
 
@@ -1904,6 +1925,9 @@ a.to-top {
 
 	.about-mobile {
 		background-image: url('../images/about-bg-mobile.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 
 	.img-mobile::after {
@@ -1946,7 +1970,7 @@ a.to-top {
 	.skills-w3lsright {
 		margin: 2em 0 0;
 	}
-	
+
 	.address_marcacao {
 		align-items: center;
 		justify-content: center;
@@ -1978,7 +2002,7 @@ a.to-top {
 
 	.experience-right p {
 		text-align: center;
-	} 
+	}
 }
 
 @media screen and (max-width: 736px) {
@@ -1995,13 +2019,14 @@ a.to-top {
 		padding-left: 0em;
 	}
 
-	.newsletter span {
-		margin: 0 0.3em 0 0;
-	}
+	.footer-grids {
+		display: grid;
+		justify-content: center;
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
 
-	.newsletter span {
-		width: 20%;
-		height: 35%;
+	.brands span {
+		margin: 0 0.3em 0 0;
 	}
 }
 
@@ -2037,11 +2062,6 @@ a.to-top {
 		font-size: 45px;
 	}
 
-	.newsletter span {
-		width: 20%;
-		height: 35%;
-	}
-
 	.booking-form-aits {
 		padding: 63px;
 	}
@@ -2051,14 +2071,14 @@ a.to-top {
 		width: 47.6%;
 	}
 
-	.footer span.fa {
+	.footer span.fa-brands {
 		margin-right: 3px;
 		font-size: 12px;
 		line-height: 11px;
 	}
 
 	.footer h4 {
-		font-size: 16px;
+		font-size: 2rem;
 		margin-bottom: 11px;
 	}
 
@@ -2085,11 +2105,6 @@ a.to-top {
 		font-size: 4.5rem;
 	}
 
-	.newsletter span {
-		width: 20%;
-		height: 35%;
-	}
-
 }
 
 @media screen and (max-width: 600px) {
@@ -2106,31 +2121,19 @@ a.to-top {
 	}
 
 	.experience-right {
-        padding: 0;
-        margin: 2em 1em 0;
-        width: 95%;
-    }
-
-	.newsletter span {
-		width: 20%;
-		height: 35%;
+		padding: 0;
+		margin: 2em 1em 0;
+		width: 95%;
 	}
 
 	.footer-grids p {
-		font-size: 11.6px;
+		font-size: 13px;
 	}
 
-	.footer span.fa {
+	.footer span.fa-brands {
 		margin-right: 0px;
 		font-size: 10px;
 		line-height: 18px;
-	}
-}
-
-@media screen and (min-width: 569px) {
-	.footer-grids {
-		display: flex;
-		display: -webkit-box;
 	}
 }
 
@@ -2165,15 +2168,10 @@ a.to-top {
 		padding: 17px;
 	}
 
-	.newsletter span {
-		width: 8%;
-		height: 35%;
-	}
-
 	.address,
 	.phone,
 	.email,
-	.newsletter {
+	.brands {
 		margin-bottom: 2em;
 	}
 }
@@ -2375,21 +2373,21 @@ a.to-top {
 @media screen and (max-width: 359px) {
 
 	.logo-cabo-moraes {
-        width: 26rem;
-    }
+		width: 26rem;
+	}
 
 	.name_vereador {
 		font-size: 4.5rem;
 	}
 
 	.bandeira-defesa {
-        width: 55px;
-        height: 55px;
-    }
+		width: 55px;
+		height: 55px;
+	}
 
 	.flags-grid p {
-        font-size: 1.1rem;
-    }
+		font-size: 1.1rem;
+	}
 
 	.tittle-agileinfo h3 {
 		font-size: 30px;
@@ -2429,12 +2427,12 @@ a.to-top {
 	}
 
 	.title-investments h3 {
-        font-size: 1.5rem;
-    }
+		font-size: 1.5rem;
+	}
 
 	.nav-tabs>li>a {
-        font-size: 12px;
-    }
+		font-size: 12px;
+	}
 
 	button {
 		padding: 8px;

@@ -1,0 +1,61 @@
+.propostas-container {
+	background: url(../images/cb.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas de igual largura */
+    grid-template-rows: repeat(5, 1fr);
+    /* 5 linhas de igual altura */
+    gap: 10px;
+    /* Espaçamento entre os blocos */
+    padding: 10px;
+    /* Espaçamento externo */
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo da altura */
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+
+.centralizar p {
+    text-align: center;
+}
+
+.card-titulo-propostas {
+    width: 21rem;
+    height: 4rem;
+    border-radius: 30px;
+    background-color: #ffc700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.card-titulo-propostas span {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.grid-item {
+    background-color: #003d8f;
+    border-radius: 20px;
+    width: 30rem;
+    height: 14rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
