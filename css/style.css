@@ -570,9 +570,10 @@ ul {
 }
 
 .name_vereador {
-	font-family: 'league spartan', sans-serif;
+	font-family: 'league gothic', sans-serif;
 	font-weight: 600;
 	font-size: 6rem;
+	letter-spacing: 2px;
 	color: #fcbd00 !important;
 }
 
@@ -1179,9 +1180,6 @@ span.circles-text {
 
 .about-education {
 	background-image: url('../images/cb.webp');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .education-p {
@@ -1561,15 +1559,18 @@ input.margin-right {
 	gap: 10px;
 }
 
+.brands-icons a {
+	color: #fff;
+}
+
 .email {
 	flex: 1;
 	-webkit-box-flex: 1;
 	color: #fff;
 }
 
-.email:hover a{
-	text-decoration: underline;
-	color: #000;
+.email:hover a {
+	color: #FFC700;
 }
 
 .email p,
@@ -1603,9 +1604,21 @@ input.margin-right {
 	cursor: pointer;
 }
 
+.brands span.fa-brands.fa-instagram:hover {
+	color: white;
+	background: linear-gradient(220deg,
+			#833ab4, #fd1d1d, #fcb045);
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+
 .brands span.fa-brands.fa-facebook-f:hover {
 	color: white;
-	background: #3b5998;
+	background: #1877F2;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -1616,13 +1629,22 @@ input.margin-right {
 
 .brands span.fa-brands.fa-whatsapp:hover {
 	color: white;
-	background: #1df22f;
+	background: #25D366;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 	text-decoration: none;
+}
+
+.fa.fa-whatsapp a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.fa.fa-whatsapp a:hover {
+	color: #FFC700;
 }
 
 .brands span.fa-brands.fa-google-plus-g:hover {
@@ -1775,8 +1797,9 @@ a.to-top {
 	.footer-grids {
 		display: grid;
 		justify-content: center;
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    }
+		grid-template-columns: repeat(2, 1fr);
+		/* 2 colunas */
+	}
 
 	.brands span {
 		margin: 0 0.5em 0 0;
@@ -2021,8 +2044,9 @@ a.to-top {
 	.footer-grids {
 		display: grid;
 		justify-content: center;
-        grid-template-columns: 1fr; /* 1 coluna */
-    }
+		grid-template-columns: 1fr;
+		/* 1 coluna */
+	}
 
 	.brands span {
 		margin: 0 0.3em 0 0;
@@ -2215,7 +2239,7 @@ a.to-top {
 	}
 
 	.about-right h2 {
-		font-size: 26px
+		font-size: 6rem;
 	}
 
 	.experience-right {
@@ -2245,6 +2269,16 @@ a.to-top {
 		margin: 8px;
 		padding: 6px;
 		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width:426px) {
+	.about-right h2 {
+		font-size: 5rem;
+	}
+
+	.name_vereador {
+		font-size: 5rem;
 	}
 }
 
@@ -2374,6 +2408,10 @@ a.to-top {
 		width: 26rem;
 	}
 
+	.about-right h2 {
+		font-size: 4.5rem;
+	}
+
 	.name_vereador {
 		font-size: 4.5rem;
 	}
@@ -2421,7 +2459,11 @@ a.to-top {
 	}
 
 	.about-right h2 {
-		font-size: 22px;
+		font-size: 4rem;
+	}
+
+	.name_vereador {
+		font-size: 4rem;
 	}
 
 	.title-investments h3 {

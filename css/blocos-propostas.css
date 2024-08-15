@@ -1,8 +1,29 @@
+/* Estilo do overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Escurecimento */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999; /* Menor que o grid-item.expanded */
+    pointer-events: none; /* Ignorar eventos de clique */
+}
+
+/* Quando o overlay está visível */
+.overlay.visible {
+    opacity: 1;
+    pointer-events: auto; /* Permitir eventos de clique */
+}
+
 .propostas-container {
 	background: url(../images/cb.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+    position: relative;
 }
 
 
@@ -26,12 +47,12 @@
     margin-top: 5rem;
 }
 
-
 .centralizar p {
     text-align: center;
 }
 
 .card-titulo-propostas {
+    z-index: 998;
     width: 21rem;
     height: 4rem;
     border-radius: 30px;
@@ -39,7 +60,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     position: absolute;
     transform: translateY(-50%);
 }
@@ -58,4 +78,184 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, z-index 0s;
+}
+
+/* Estilo do grid-item quando clicado */
+.grid-item.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2); /* Ajuste o fator de escala conforme necessário */
+    width: 50vw; /* 60% da largura da tela */
+    height: 35vh; /* 60% da altura da tela */
+    z-index: 1000; /* Maior que o overlay */
+    background-color: #003d8f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.grid-item.expanded .info-extra {
+    display: block;
+    max-height: 300px; /* Ajuste conforme necessário */
+    opacity: 1;
+}
+
+.grid-item.expanded .info-principal {
+    font-size: 3rem;
+}
+
+.grid-item.expanded .info-extra {
+    font-size: 16px;
+    color: yellow;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-principal {
+    transition: font-size 0.3s ease;
+}
+
+.info-extra {
+    display: none;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width:950px) {
+
+    .card-titulo-propostas {
+        width: 21rem;
+    }
+
+    .grid-item {
+        width: 26rem;
+    }
+}
+
+@media screen and (max-width:830px) {
+
+    .card-titulo-propostas {
+        width: 16rem;
+    }
+
+    .grid-item {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .centralizar p {
+        font-size: 1.4rem !important;
+    }
+
+    .card-titulo-propostas {
+        width: 12rem;
+    }
+
+    .card-titulo-propostas span {
+        font-size: 1.3rem;
+    }
+
+    .grid-item {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    .centralizar p {
+        font-size: 1.2rem !important;
+    }
+
+    .card-titulo-propostas {
+        width: 9rem;
+        height: 2.5rem;
+    }
+
+    .card-titulo-propostas span {
+        font-size: 1.2rem;
+    }
+
+    .grid-item {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:490px) {
+
+    .card-titulo-propostas {
+        width: 7rem;
+    }
+
+    .card-titulo-propostas span {
+        font-size: 1rem;
+    }
+
+    .grid-item {
+        width: 13rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .centralizar p {
+        font-size: 1rem !important;
+    }
+
+    .card-titulo-propostas span {
+        font-size: 1rem;
+    }
+
+    .grid-item {
+        width: 11rem;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    .grid-container {
+        gap: 5px;
+    }
+
+    .grid-item {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:330px) {
+
+    .centralizar p {
+        font-size: .9rem !important;
+    }
+
+    .grid-container {
+        gap: 4px;
+    }
+
+    .card-titulo-propostas {
+        width: 6rem;
+    }
+
+    .card-titulo-propostas span {
+        font-size: .9rem;
+    }
+
+    .grid-item {
+        width: 9rem;
+    }
 }
