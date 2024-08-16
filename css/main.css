@@ -9,6 +9,27 @@ Max-usefullness: minimal;
 
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 .yeseva-one-regular {
@@ -17,18 +38,8 @@ Max-usefullness: minimal;
     font-style: normal;
   }
 
-/* .container {
-    width: 100dvh;
-    height: 100dvh;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 0;
-} */
-
 .container-principal {
     position: relative;
-    height: 100vh; /* 100% da altura da tela */
     display: flex;
     justify-content: space-between;
     align-items: flex-end; /* Alinha os elementos no fundo da tela */
@@ -43,24 +54,30 @@ Max-usefullness: minimal;
 }
 
 .text-e-logo {
+    position: relative;
+    top: 0px;
+    right: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.texts-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
 }
 
 .text-vote {
-    position: absolute;
-    top: 120px;
-    right: 0px;
-    /* width: 30%; */
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    bottom: 350px; /* Ajuste conforme necessário para definir o espaço entre o texto e o logo */
     text-align: center;
-    padding: 30px;
 }
 
 .vote-container {
@@ -70,35 +87,27 @@ Max-usefullness: minimal;
 .text1 {
     writing-mode: vertical-rl; /* Alinha o texto na vertical, de baixo para cima */
     transform: rotate(180deg); /* Inverte a direção para que o texto seja lido de cima para baixo */
-    font-size: 7rem; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-right: 10px; /* Espaçamento entre "VOTE" e os números */
-    text-align: center;
+    font-size: 9rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 35px;
 }
 
 .number-vote {
-    font-size: 15vw;
+    font-size: 30rem;
     color: #fcbd00;
 }
 
 .text2 {
-    font-size: 8rem;
+    font-size: 9rem;
 }
 
 .centralizar-text3 {
-    position: absolute;
-    top: 120px;
-    right: 0px;
-    /* width: 30%; */
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    bottom: 350px; /* Ajuste conforme necessário para definir o espaço entre o texto e o logo */
     text-align: center;
-    padding: 30px;}
+}
 
 .text3 {
+    text-align: center;
     font-size: 3rem;
 }
 
@@ -121,12 +130,31 @@ Max-usefullness: minimal;
 }
 
 .logo-cabo-moraes {
-    position: absolute;
-    bottom: 10px;
-    right: 35px;
-    width: 30%;
+    width: 26%;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*           Wrapper
@@ -416,8 +444,97 @@ img.vert-move {
 
 /*Media query for all non-mobile devices*/
 
-@media screen and (min-width: 780px) {
+/* Página Principal */
+@media screen and (max-width: 1600px) {
+    .bio-principal {
+        width: 70%;
+    }
 
+    .text1 {
+        font-size: 8rem;
+    }
+
+    .number-vote {
+        font-size: 27rem;
+    }
+    
+    .text2 {
+        font-size: 8rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bio-principal {
+        width: 80%;
+    }
+    
+    .text1 {
+        font-size: 7rem;
+    }
+    
+    .number-vote {
+        font-size: 25rem;
+    }
+
+    .text2 {
+        font-size: 7.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bio-principal {
+        width: 90%;
+    }
+    
+    .text1 {
+        font-size: 6rem;
+    }
+    
+    .number-vote {
+        font-size: 22rem;
+    }
+
+    .text2 {
+        font-size: 6.5rem;
+    }
+
+    /* .text3 {
+        text-align: center;
+        font-size: 3rem;
+    } */
+    
+    .text3-1 {
+        font-size: 3.5rem;
+    }
+    
+    .text3-2 {
+        font-size: 6rem;
+    }
+    
+    .text3-3 {
+        font-size: 3.5rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bio-principal {
+        left: -90px;
+        width: 110%;
+    }
+}
+
+/* Página Principal */
+
+@media screen and (min-width: 780px) {
+    
     /*Nav bar media queries!*/
     #m_nav_container {
         text-align: left;
