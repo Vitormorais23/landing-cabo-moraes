@@ -84,7 +84,7 @@ ul {
 
 /*-- header styling starts here --*/
 .agileits_main {
-	background: url(../images/cb.webp);
+	background-image: url(../images/about-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

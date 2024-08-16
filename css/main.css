@@ -9,6 +9,125 @@ Max-usefullness: minimal;
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* .container {
+    width: 100dvh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+} */
+
+.container-principal {
+    position: relative;
+    height: 100vh; /* 100% da altura da tela */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinha os elementos no fundo da tela */
+}
+
+.bio-principal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: auto;
+}
+
+.text-e-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-vote {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    /* width: 30%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 350px; /* Ajuste conforme necessário para definir o espaço entre o texto e o logo */
+    text-align: center;
+    padding: 30px;
+}
+
+.vote-container {
+    display: flex;
+}
+
+.text1 {
+    writing-mode: vertical-rl; /* Alinha o texto na vertical, de baixo para cima */
+    transform: rotate(180deg); /* Inverte a direção para que o texto seja lido de cima para baixo */
+    font-size: 7rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-right: 10px; /* Espaçamento entre "VOTE" e os números */
+    text-align: center;
+}
+
+.number-vote {
+    font-size: 15vw;
+    color: #fcbd00;
+}
+
+.text2 {
+    font-size: 8rem;
+}
+
+.centralizar-text3 {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    /* width: 30%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 350px; /* Ajuste conforme necessário para definir o espaço entre o texto e o logo */
+    text-align: center;
+    padding: 30px;}
+
+.text3 {
+    font-size: 3rem;
+}
+
+.text3-1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.text3-2 {
+    font-weight: 800;
+    font-size: 7rem;
+    color: #fcbd00;
+}
+
+.text3-3 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.logo-cabo-moraes {
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    width: 30%;
+    height: auto;
+}
+
 
 /*           Wrapper
 ==============================*/
