@@ -83,12 +83,18 @@ ul {
 }
 
 /*-- header styling starts here --*/
+.agileits_menu {
+	height: 100px;
+}
+
 .agileits_main {
 	background-image: url(../images/about-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100dvh;
+	min-height: calc(100dvh - 100px); /* Garante que a altura mínima seja 100% da viewport */
+    display: flex;
+    align-items: flex-end;
 }
 
 .agile-logo {

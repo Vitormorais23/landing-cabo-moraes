@@ -12,24 +12,6 @@ Max-usefullness: minimal;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 .yeseva-one-regular {
@@ -40,16 +22,13 @@ Max-usefullness: minimal;
 
 .container-principal {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; /* Alinha os elementos no fundo da tela */
 }
 
 .bio-principal {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60%;
+    width: 37%;
     height: auto;
 }
 
@@ -59,10 +38,13 @@ Max-usefullness: minimal;
     right: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
     text-align: center;
     padding: 0 30px;
+    align-items: flex-end;
+    min-height: calc(100dvh - 100px);
+    line-height: 1.1;
+
 }
 
 .texts-logo {
@@ -87,17 +69,17 @@ Max-usefullness: minimal;
 .text1 {
     writing-mode: vertical-rl; /* Alinha o texto na vertical, de baixo para cima */
     transform: rotate(180deg); /* Inverte a direção para que o texto seja lido de cima para baixo */
-    font-size: 9rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 7rem; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 35px;
 }
 
 .number-vote {
-    font-size: 30rem;
+    font-size: 25rem;
     color: #fcbd00;
 }
 
 .text2 {
-    font-size: 9rem;
+    font-size: 7.5rem;
 }
 
 .centralizar-text3 {
@@ -119,7 +101,7 @@ Max-usefullness: minimal;
 
 .text3-2 {
     font-weight: 800;
-    font-size: 7rem;
+    font-size: 6.5rem;
     color: #fcbd00;
 }
 
@@ -130,30 +112,16 @@ Max-usefullness: minimal;
 }
 
 .logo-cabo-moraes {
-    width: 26%;
+    width: 23%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.linha {
+    height: 6px;
+    background-color: #fcbd00;
+}
 
 
 
@@ -445,21 +413,44 @@ img.vert-move {
 /*Media query for all non-mobile devices*/
 
 /* Página Principal */
-@media screen and (max-width: 1600px) {
+
+/* @media screen and (max-height: 850px) {
     .bio-principal {
-        width: 70%;
+        width: 53%;
     }
 
     .text1 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 
     .number-vote {
-        font-size: 27rem;
+        font-size: 18rem;
+    }
+
+    .text2 {
+        font-size: 5.5rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 30%;
+    }
+} */
+
+@media screen and (max-width: 1600px) {
+    .bio-principal {
+        width: 44%;
+    }
+
+    .text1 {
+        font-size: 7rem;
+    }
+
+    .number-vote {
+        font-size: 24rem;
     }
     
     .text2 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     .logo-cabo-moraes {
@@ -469,25 +460,30 @@ img.vert-move {
 
 @media screen and (max-width: 1400px) {
     .bio-principal {
-        width: 80%;
+        width: 50%;
     }
     
     .text1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
     
     .number-vote {
-        font-size: 25rem;
+        font-size: 23rem;
     }
 
     .text2 {
-        font-size: 7.5rem;
+        font-size: 7rem;
+    }
+
+    .text3-2 {
+        font-size: 6rem;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .bio-principal {
-        width: 90%;
+        left: -80px;
+        width: 58%;
     }
     
     .text1 {
@@ -526,12 +522,122 @@ img.vert-move {
 
 @media screen and (max-width: 900px) {
     .bio-principal {
-        left: -90px;
-        width: 110%;
+        left: -64px;
+        width: 62%;
+    }
+
+    .text-e-logo {
+        padding: 0px 15px;
     }
 }
 
-/* Página Principal */
+@media screen and (max-width: 850px) {
+    .bio-principal {
+        left: -50px;
+        width: 60%;
+    }
+    
+    .text1 {
+        font-size: 3.5rem;
+    }
+    
+    .number-vote {
+        font-size: 17rem;
+    }
+
+    .text2 {
+        font-size: 5rem;
+    }
+
+    .text3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .text3-1 {
+        font-size: 3rem;
+    }
+    
+    .text3-2 {
+        font-size: 5rem;
+    }
+    
+    .text3-3 {
+        font-size: 3rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 39%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* .texts {
+        display: flex;
+        align-items: flex-end;
+    } */
+
+    .text-vote {
+        order: 2; /* Pode ajustar a ordem da div se necessário */
+        margin-bottom: .5rem; /* Espaçamento entre as divs */
+    }
+
+    .centralizar-text3 {
+         /* Alterando a ordem das divs se necessário */
+        margin-bottom: 10px;
+        text-align: center; /* Centralizando o texto se necessário */
+    }
+
+    .bio-principal {
+        width: 65%;
+    }
+}
+
+/* Estilos específicos para telas com 560px de largura */
+@media screen and (max-width: 560px) {
+
+    .texts {
+        line-height: 1.1;
+    }
+
+    .text1 {
+        font-size: 4rem;
+        margin-top: 18px;
+    }
+
+    /* Ajuste adicional, se necessário */
+    .number-vote {
+        font-size: 13rem;
+    }
+
+    .text2 {
+        font-size: 4rem;
+    }
+
+    .bio-principal {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .text1 {
+        font-size: 4rem;
+        margin-top: 18px;
+    }
+
+    /* Ajuste adicional, se necessário */
+    .number-vote {
+        font-size: 13rem;
+    }
+
+    .text2 {
+        font-size: 4rem;
+    }
+}
+
+/* END Página Principal */
 
 @media screen and (min-width: 780px) {
     
@@ -639,7 +745,7 @@ Media query for mid-size non-mobile devices*/
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80px;
+        height: 100px;
     }
 
     #m_nav_menu {
