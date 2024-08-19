@@ -90,11 +90,12 @@ ul {
 .agileits_main {
 	background-image: url(../images/about-bg.webp);
 	background-repeat: no-repeat;
-	background-position: center;
+	/* background-position: center; */
 	background-size: cover;
 	min-height: calc(100dvh - 100px); /* Garante que a altura mínima seja 100% da viewport */
     display: flex;
     align-items: flex-end;
+	justify-content: center;
 }
 
 .agile-logo {
@@ -2066,6 +2067,15 @@ a.to-top {
 }
 
 @media screen and (max-width: 667px) {
+
+	.agileits_main {
+        min-height: 100dvh;
+    }
+    
+    .agileits_menu {
+		height: 0px;
+	}
+
 	.agile-logo {
 		width: 53%;
 	}

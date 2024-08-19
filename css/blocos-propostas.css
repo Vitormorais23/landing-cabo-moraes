@@ -26,6 +26,35 @@
     position: relative;
 }
 
+.button {
+    display: flex;
+
+}
+
+.buttton-inicio {
+    padding: 11px 20px;
+    border-radius: 20px;
+    background-color: #003d8f;
+    color: #fff;
+    margin: 20px;
+    font-size: 1.6rem;
+}
+
+.buttton-inicio:hover {
+    background-color: #042857;
+    color: #fff;
+}
+
+.text-motivos {
+    color: #003d8f;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.text-name {
+    color: #ffc700;
+    font-size: 5rem;
+}
 
 .grid-container {
     display: grid;
@@ -71,6 +100,7 @@
 
 .grid-item {
     background-color: #003d8f;
+    box-shadow: 7px 7px 5px -3px rgba(0,0,0,0.56);
     border-radius: 20px;
     width: 30rem;
     height: 14rem;
@@ -134,7 +164,27 @@
     transition: font-size 0.3s ease, color 0.3s ease;
 }
 
+@media screen and (max-width: 1200px) {
+    .text-motivos {
+        font-size: 4rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 4.5rem;
+    }
+}
+
 @media screen and (max-width:950px) {
+
+    .text-motivos {
+        font-size: 3.5rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 4rem;
+    }
 
     .card-titulo-propostas {
         width: 21rem;
@@ -147,6 +197,15 @@
 
 @media screen and (max-width:830px) {
 
+    .text-motivos {
+        font-size: 3rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 3.5rem;
+    }
+
     .card-titulo-propostas {
         width: 16rem;
     }
@@ -157,6 +216,15 @@
 }
 
 @media screen and (max-width:700px) {
+
+    .text-motivos {
+        font-size: 2.5rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 3rem;
+    }
 
     .centralizar p {
         font-size: 1.4rem !important;
@@ -176,6 +244,15 @@
 }
 
 @media screen and (max-width:580px) {
+
+    .text-motivos {
+        font-size: 2rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 2.5rem;
+    }
 
     .centralizar p {
         font-size: 1.2rem !important;
@@ -197,6 +274,15 @@
 
 @media screen and (max-width:490px) {
 
+    .text-motivos {
+        font-size: 1.7rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 2rem;
+    }
+
     .card-titulo-propostas {
         width: 7rem;
     }
@@ -213,6 +299,15 @@
 
 @media screen and (max-width:430px) {
 
+    .text-motivos {
+        font-size: 1.6rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 1.8rem;
+    }
+
     .centralizar p {
         font-size: 1rem !important;
     }
@@ -228,6 +323,15 @@
 
 @media screen and (max-width:370px) {
 
+    .text-motivos {
+        font-size: 1.4rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 1.6rem;
+    }
+
     .grid-container {
         gap: 5px;
     }
@@ -238,6 +342,15 @@
 }
 
 @media screen and (max-width:330px) {
+
+    .text-motivos {
+        font-size: 1.1rem;
+    }
+
+    .text-name {
+        color: #ffc700;
+        font-size: 1.4rem;
+    }
 
     .centralizar p {
         font-size: .9rem !important;
