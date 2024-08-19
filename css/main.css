@@ -113,7 +113,7 @@ Max-usefullness: minimal;
 }
 
 .logo-cabo-moraes {
-    width: 23%;
+    width: 14%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -455,7 +455,7 @@ img.vert-move {
     }
 
     .logo-cabo-moraes {
-        width: 36%;
+        width: 24%;
     }
 }
 
@@ -516,7 +516,7 @@ img.vert-move {
     }
 
     .logo-cabo-moraes {
-        width: 30%;
+        width: 20%;
     }
 }
 
@@ -574,16 +574,11 @@ img.vert-move {
     }
 
     .logo-cabo-moraes {
-        width: 39%;
+        width: 30%;
     }
 }
 
 @media screen and (max-width: 650px) {
-
-    /* .texts {
-        display: flex;
-        align-items: flex-end;
-    } */
 
     .text-vote {
         order: 2; /* Pode ajustar a ordem da div se necessário */
@@ -615,11 +610,11 @@ img.vert-move {
 
     /* Ajuste adicional, se necessário */
     .number-vote {
-        font-size: 13rem;
+        font-size: 16rem;
     }
 
     .text2 {
-        font-size: 4rem;
+        font-size: 4.7rem;
     }
 
     .bio-principal {
@@ -642,6 +637,119 @@ img.vert-move {
     .text2 {
         font-size: 4rem;
     }
+}
+
+@media screen and (max-width: 430px) {
+
+    .text-e-logo {
+        padding: 0;
+    }
+
+
+    .bio-principal {
+        width: 79%;
+    }
+
+    .texts-logo {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .centralizar-text3 {
+        top: -50px;
+        position: relative;
+        margin: 0 15px;
+    }
+    
+    .text1 {
+        font-size: 3.5rem;
+    }
+    
+    .logo-cabo-moraes {
+        position: relative;
+        top: 20px;
+        margin: 0 15px;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .centralizar-text3 {
+        margin: 0 15px;
+    }
+
+    .text1 {
+        font-size: 3.5rem;
+    }
+    
+    .text3-2 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .bio-principal {
+        width: 79%;
+    }
+
+    .text1 {
+        font-size: 3rem;
+    }
+
+    .number-vote {
+        font-size: 11.5rem;
+    }
+
+    .text2 {
+        font-size: 3.4rem;
+    }
+
+    .text3-2 {
+        font-size: 4.5rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 38%;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .bio-principal {
+        width: 79%;
+    }
+
+    .text1 {
+        font-size: 2.8rem;
+    }
+
+    .number-vote {
+        font-size: 10.5rem;
+    }
+
+    .text2 {
+        font-size: 3.1rem;
+    }
+
+    .text3-1 {
+        font-size: 2.8rem;
+    }
+
+    .text3-2 {
+        font-size: 4.5rem;
+    }
+
+    .text3-3 {
+        font-size: 2.8rem;
+    }
+
+    .logo-cabo-moraes {
+        width: 32%;
+    }
+    
 }
 
 /* END Página Principal */
