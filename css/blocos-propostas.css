@@ -120,7 +120,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2); /* Ajuste o fator de escala conforme necessário */
     width: 50vw; /* 60% da largura da tela */
-    height: 35vh; /* 60% da altura da tela */
+    height: 35svh; /* 60% da altura da tela */
     z-index: 1000; /* Maior que o overlay */
     background-color: #003d8f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);

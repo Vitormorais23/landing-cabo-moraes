@@ -92,7 +92,7 @@ ul {
 	background-repeat: no-repeat;
 	/* background-position: center; */
 	background-size: cover;
-	min-height: calc(100dvh - 100px); /* Garante que a altura mínima seja 100% da viewport */
+	min-height: calc(100svh - 100px); /* Garante que a altura mínima seja 100% da viewport */
     display: flex;
     align-items: flex-end;
 	justify-content: center;
@@ -2069,7 +2069,7 @@ a.to-top {
 @media screen and (max-width: 667px) {
 
 	.agileits_main {
-        min-height: 100dvh;
+        min-height: 100svh;
     }
     
     .agileits_menu {
