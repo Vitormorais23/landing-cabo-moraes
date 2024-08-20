@@ -52,7 +52,7 @@
 }
 
 .text-name {
-    color: #ffc700;
+    color: #003d8f;
     font-size: 5rem;
 }
 
@@ -170,7 +170,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 4.5rem;
     }
 }
@@ -182,7 +181,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 4rem;
     }
 
@@ -202,7 +200,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 3.5rem;
     }
 
@@ -222,7 +219,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 3rem;
     }
 
@@ -250,7 +246,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 2.5rem;
     }
 
@@ -274,12 +269,16 @@
 
 @media screen and (max-width:490px) {
 
+    .buttton-inicio {
+        padding: 7px 16px;
+        font-size: 1.6rem;
+    }
+
     .text-motivos {
         font-size: 1.7rem;
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 2rem;
     }
 
@@ -304,7 +303,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 1.8rem;
     }
 
@@ -328,7 +326,6 @@
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 1.6rem;
     }
 
@@ -343,12 +340,16 @@
 
 @media screen and (max-width:330px) {
 
+    .buttton-inicio {
+        padding: 5px 12px;
+        font-size: 1.6rem;
+    }
+
     .text-motivos {
         font-size: 1.1rem;
     }
 
     .text-name {
-        color: #ffc700;
         font-size: 1.4rem;
     }
 
