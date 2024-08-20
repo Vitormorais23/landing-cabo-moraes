@@ -113,6 +113,11 @@
     transition: transform 0.3s ease-in-out, z-index 0s;
 }
 
+.grid-item:hover {
+    background-color: #012758;
+    cursor: pointer;
+}
+
 /* Estilo do grid-item quando clicado */
 .grid-item.expanded {
     position: fixed;
