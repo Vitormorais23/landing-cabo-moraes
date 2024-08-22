@@ -101,7 +101,7 @@
     background-color: #003d8f;
     border-radius: 20px;
     width: 30rem;
-    height: 14rem;
+    height: 17rem;
     padding: 8px;
     display: flex;
     align-items: center;
@@ -152,7 +152,6 @@
 
     .card-implementacao {
         width: 25rem;
-        height: 14rem;
         padding: 8px;
     }
 }
@@ -169,7 +168,7 @@
 
     .card-implementacao {
         width: 20rem;
-        height: 15rem;
+        height: 16rem;
     }
 }
 
@@ -206,13 +205,12 @@
 
     .card-implementacao {
         width: 18rem;
-        height: 15rem;
     }
 }
 
 @media (max-width: 415px) {
     .text-card-implementacao {
-        font-size: 1rem;
+        font-size: .92rem;
     }
 
     .card-implementacao {
@@ -239,7 +237,7 @@
 
     .card-implementacao {
         width: 14.5rem;
-        height: 15rem;
+        height: 16rem;
     }
 
     .coluna-principal-invest {

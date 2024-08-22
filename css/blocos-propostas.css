@@ -51,6 +51,12 @@
     text-align: center;
 }
 
+.text-clique {
+    color: #003d8f;
+    font-size: 3rem;
+    text-align: center;
+}
+
 .text-name {
     color: #069b0f;
     font-size: 5rem;
@@ -68,6 +74,8 @@
     /* Espaçamento externo */
     box-sizing: border-box;
     /* Inclui padding e border no cálculo da altura */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .centralizar {
@@ -174,6 +182,10 @@
         font-size: 4rem;
     }
 
+    .text-clique {
+        font-size: 2.5rem;
+    }
+
     .text-name {
         font-size: 4.5rem;
     }
@@ -183,6 +195,10 @@
 
     .text-motivos {
         font-size: 3.5rem;
+    }
+
+    .text-clique {
+        font-size: 1.8rem;
     }
 
     .text-name {
@@ -204,6 +220,10 @@
         font-size: 3rem;
     }
 
+    .text-clique {
+        font-size: 1.5rem;
+    }
+
     .text-name {
         font-size: 3.5rem;
     }
@@ -221,6 +241,10 @@
 
     .text-motivos {
         font-size: 2.5rem;
+    }
+
+    .text-clique {
+        font-size: 1.4rem;
     }
 
     .text-name {
@@ -248,6 +272,10 @@
 
     .text-motivos {
         font-size: 2rem;
+    }
+
+    .text-clique {
+        font-size: 1.3rem;
     }
 
     .text-name {
@@ -283,6 +311,10 @@
         font-size: 1.7rem;
     }
 
+    .text-clique {
+        font-size: 1.2rem;
+    }
+
     .text-name {
         font-size: 2rem;
     }
@@ -307,6 +339,10 @@
         font-size: 1.6rem;
     }
 
+    .text-clique {
+        font-size: .9rem;
+    }
+
     .text-name {
         font-size: 1.8rem;
     }
@@ -327,7 +363,11 @@
 @media screen and (max-width:370px) {
 
     .text-motivos {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+
+    .text-clique {
+        font-size: .9rem;
     }
 
     .text-name {
@@ -351,7 +391,7 @@
     }
 
     .text-motivos {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .text-name {
