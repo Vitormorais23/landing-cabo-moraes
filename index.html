@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 		</div>
-		<a href="#home" class="to-top"><img src="images/to-top.png" alt="botão de voltar para o topo" class="vert-top"></a>
+		<a href="#home" id="toTop"><img src="images/to-top.png" alt="botão de voltar para o topo" ></a>
 		<!-- menu -->
 		<!-- <div class="container">
 			<div class="agile-logo">
@@ -1072,13 +1072,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script> -->
 	<!-- //circle -->
 	<!-- start-smoth-scrolling -->
+	
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 3000);
+		$(document).ready(function() {
+			$().UItoTop({
+				text: 'Topo',          // Texto do botão
+				min: 300,              // Rolagem mínima para aparecer
+				inDelay: 600,          // Delay para aparecer
+				outDelay: 400,         // Delay para desaparecer
+				scrollSpeed: 1200,     // Velocidade da rolagem até o topo
+				easingType: 'easeOutCubic' // Tipo de easing para a rolagem suave
 			});
 		});
 	</script>
