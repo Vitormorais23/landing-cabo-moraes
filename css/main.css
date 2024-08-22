@@ -18,10 +18,18 @@ Max-usefullness: minimal;
     font-family: "Yeseva One", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .container-principal {
     position: relative;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância do fundo da tela */
+    right: 20px;  /* Ajuste a distância do lado direito da tela */
+    font-size: 24px; /* Defina o tamanho da seta */
+    z-index: 1000; /* Certifique-se de que a seta fique acima de outros elementos */
 }
 
 .bio-principal {
@@ -52,7 +60,6 @@ Max-usefullness: minimal;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-
 }
 
 .text-vote {
@@ -299,6 +306,24 @@ an X*/
 }
 
 /* animação img */
+
+img.vert-top {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-top {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
 img.vert-move {
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
@@ -911,6 +936,10 @@ Media query for mid-size non-mobile devices*/
     .m_nav_item a {
         padding: 10px;
         font-size: 14px;
+    }
+
+    .to-top {
+        display: none;
     }
 
 }
