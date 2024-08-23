@@ -29,7 +29,7 @@ Max-usefullness: minimal;
     height: 50px;
     text-align: center;
     padding: 10px;
-    background: #007bff;
+    /* background: #007bff; */
     color: white;
     position: fixed;
     bottom: 20px;
@@ -43,15 +43,6 @@ Max-usefullness: minimal;
 
 #toTop:hover {
     opacity: 1;
-}
-
-
-.to-top {
-    position: fixed;
-    bottom: 20px; /* Ajuste a distância do fundo da tela */
-    right: 20px;  /* Ajuste a distância do lado direito da tela */
-    font-size: 24px; /* Defina o tamanho da seta */
-    z-index: 1000; /* Certifique-se de que a seta fique acima de outros elementos */
 }
 
 .bio-principal {
@@ -958,10 +949,6 @@ Media query for mid-size non-mobile devices*/
     .m_nav_item a {
         padding: 10px;
         font-size: 14px;
-    }
-
-    #toTop {
-        display: none;
     }
 
 }
